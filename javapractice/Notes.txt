@@ -1,0 +1,131 @@
+static----can be used anywhere within class, value is changed for all
+instance----used by creating object
+local----exists only within a function
+
+instance can call static but static cannot call instance
+
+
+INHERITANCE 
+        - 3 types
+        - entends keyword
+        -child class le parent ko obj banauna milcha tara parent class le child ko obj banauna mildaina
+
+Dynamic Method Dispatch (parent bata inheerited bahek aru methods lina bata limit garna lai use hunxa), Singleton pattern 
+	OBJECT CLASS
+	  - parent to every method when you don’t write extends 
+
+	multiple inheritance..
+
+METHOD OVERRIDING 
+	@Override le annotate garxa(yo method overriden xa vanera vanxa)
+        - Ovvrde garda method ko scope limit garna paindaina i.e lower level lana mildaina eg: parent ma public xa va xhild class ma private banauna milena
+
+SUPER
+        - calls parent ko methods,variables eg: super.parentproperty
+SUPER CONSTRUCTOR
+        - super()
+        - calls constructor of parent class having same signature? eg: super() calls no arg construcytor , super(1) calls parent(int)
+        - jvm le default constructor ko case ma afai super() call gardinxa lekhey ni nalekhey ni
+        - both this() and super() initialize objects so both need to be in first line sooo they can’t be used together
+        - super constructor cannot be used in methods
+FINAL
+        - final keywords halyo ki child class le override garna mildaina
+        
+
+METHOD OVERRIDING 
+	@Override le annotate garxa(yo method overriden xa vanera vanxa)
+        - Ovvrde garda method ko scope limit garna paindaina i.e lower level lana mildaina eg: parent ma public xa va xhild class ma private banauna milena
+        - -parent class ma define gareko method lai child class ma redefine garnu
+        - -private class override garna mildaina
+FINAL
+        - method ma lekhyo ki final keywords halyo ki child class le override garna mildaina
+        - class ma lekhyo ki inherit nai garna nadine
+
+ABSTRACTION
+        - kei set of services open garne kei lai lukaidine?
+        - class ra method ma define garna milxa
+        - abstract method ko body part hunna
+        - abstract class ko object hunna 
+        - “abstract” is keyword eg: abstract void add();, public abstract class();
+        - abstract method xa va class ma ni “abstract” lekhnu parxa tara abstract class xa doesn’t mean abstract method hunu parxa
+        - abstract class inherit garyo vane subclass ma abstract method define garnu parxa. Sabai abstract class lai implement garna sakena vane subclass lai pani abstract define garnu parxa
+        - abstract class ko obj banauna mildaina
+
+INTERFACE
+        - declare by public interface <name>{}----use by implements
+        - by default public ra abstract huncha
+        - supports multiple inheritence
+        
+EXCEPTION HANDLING
+        - try: rsiky code
+        - catch(Exception e): handling code
+        - finally: cleanup code 
+        - throw: customized exception
+        - throws: call method lai jimma dine
+
+        - e.printStackTrace() --> display error message from JVM
+          e.toString
+          e.getMessage
+        - Multple Exception(multiple catch): type of exception(Exception, ArithmeticException, NullPointerException)
+        
+        -Contents of exception: name, description, location
+        
+*****
+INTERFACE
+- kunai pani method ko implementation dina paidaina i.e by default abstract hunxa and public hunxa
+- EXCEPTION: “default” keyword halyo ki body halna painxa
+- multiple inheritance allowed xa this is because interface ma yessai implementation hudaina so inherit garda jun ko aaye ni baal
+
+EXCEPTION
+- checked = exception aaunu vanda agadi check garinxa
+- unchecked = murkhata, eg: divide by 0
+- try,catch,throw,finally,
+
+DEFAULT EXCEPTION HANDLER
+- exception aako line ma jvm le exception ko ojbect banauxa ani handle vako xa ki xaina check garxa
+- handle va xaina va called method ma janxa
+- ajhai handle vaxaina va default handler lai dinxa jasle name, description, location print gardinxa yesko lagi object.printStackTrace(); use garne 
+- name ra description matra print garne va toString() , description matra lai getmessage();
+- default exception handle vako ki gracefully terminate hunna
+- gracefullu execite farma tru catch throw
+- exception handler le milaune haina just ramrari terminate garne ho
+
+try=risky code
+- only risky code because jun line ma exception aayo tyo vanda tala ko execute hunna
+catch=handling code
+finally=cleanup code
+
+throw/throws
+- gracefully terminate hunna
+- exception handle garne jimma calling method lai diney va throws use garne [ void add() throws exception{}]
+
+multiple catch
+- kasto exception catch garne tyo class ko naam dina awashyak xa
+- eg: catch(ArthmeticException ae),catch(NullPointerException ne), catch(exception e) 
+- NOTE: catch(exception e)  last ma lekhnu parxa natra sab exception yesle nai catch gardinxa
+
+
+MySQL   
+        mysql --version (checks version)
+        mysql -u root -p (Login)
+
+        show databases; (shows all databases)
+        create database <name>; (create database)
+        use <database_name>; 
+
+        create table <table_name> (id int primary key,name varchar(25),phone varchar(15));
+        show tables;
+        select * from <table_name>
+        
+
+
+
+
+
+
+
+Project notes:
+        - password * display
+        -amount double
+        -
+        
